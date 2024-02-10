@@ -1,4 +1,4 @@
-var tableNumber = null;
+var orderNumber = null;
 
 AFRAME.registerComponent("markerhandler", {
   init: async function () {
@@ -190,7 +190,7 @@ AFRAME.registerComponent("markerhandler", {
 
     //Getting Table Number
     var oNumber;
-    orderNumber <= 9 ? (oNumber = `T0${orderNumber}`) : `T${tableNumber}`;
+    orderNumber <= 9 ? (oNumber = `T0${orderNumber}`) : `T${orderNumber}`;
 
     //Getting Order Summary from database
     var orderSummary = await this.getOrderSummary(oNumber);
